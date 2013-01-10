@@ -123,7 +123,7 @@ int pm=0;//±フラグ
             if(pm==2){
                 c=n;
             }
-            else if(F>=10&&F<=30){
+            else if(F>=10){
                 c=x;
                 NSLog(@"えんざん_push");
             }
