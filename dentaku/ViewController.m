@@ -165,7 +165,14 @@ int pm=0;//±フラグ
 }
 ////////////±を押したとき/////////ここははっきり言っておかしい////////
 - (IBAction)puramai:(id)sender {
-    NSLog(@"±_push");
+    
+    if(n!=0)
+    {
+        n=(-1)*n;
+        [[self label1] setText:[NSString stringWithFormat : @"%g",n]];
+        pm=2;
+        NSLog(@"±_push");
+    }
     if(n==0){
         [[self label1] setText:@"-"];
         pm=1;
