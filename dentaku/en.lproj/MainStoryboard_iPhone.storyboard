@@ -315,6 +315,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="sin:" destination="2" eventType="touchUpInside" id="0WK-zJ-QGr"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="NGE-bE-jkx">
                                 <constraints>
@@ -328,6 +331,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="cos:" destination="2" eventType="touchUpInside" id="gPX-yr-f6C"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DLR-as-X7Z">
                                 <fontDescription key="fontDescription" type="boldSystem" pointSize="15"/>
@@ -338,6 +344,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="tan:" destination="2" eventType="touchUpInside" id="o1A-RF-H4S"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="te6-3Z-GlX">
                                 <constraints>
@@ -351,6 +360,9 @@
                                 <state key="highlighted">
                                     <color key="titleColor" white="1" alpha="1" colorSpace="calibratedWhite"/>
                                 </state>
+                                <connections>
+                                    <action selector="root:" destination="2" eventType="touchUpInside" id="x8x-wa-f5Q"/>
+                                </connections>
                             </button>
                             <label opaque="NO" clipsSubviews="YES" userInteractionEnabled="NO" contentMode="left" text="" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mCQ-LI-S5M">
                                 <color key="backgroundColor" red="0.21481093253541494" green="0.51986051239390341" blue="1" alpha="1" colorSpace="calibratedRGB"/>
@@ -463,40 +475,6 @@
             <point key="canvasLocation" x="-76" y="207"/>
         </scene>
     </scenes>
-    <classes>
-        <class className="NSLayoutConstraint" superclassName="NSObject">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/NSLayoutConstraint.h"/>
-        </class>
-        <class className="ViewController" superclassName="UIViewController">
-            <source key="sourceIdentifier" type="project" relativePath="./Classes/ViewController.h"/>
-            <relationships>
-                <relationship kind="action" name="AllClear:"/>
-                <relationship kind="action" name="clear:"/>
-                <relationship kind="action" name="eight:"/>
-                <relationship kind="action" name="enter:"/>
-                <relationship kind="action" name="five:"/>
-                <relationship kind="action" name="hiku:"/>
-                <relationship kind="action" name="kake:"/>
-                <relationship kind="action" name="nine:"/>
-                <relationship kind="action" name="one:"/>
-                <relationship kind="action" name="puramai:"/>
-                <relationship kind="action" name="seven:"/>
-                <relationship kind="action" name="six:"/>
-                <relationship kind="action" name="tasu:"/>
-                <relationship kind="action" name="ten:"/>
-                <relationship kind="action" name="three:"/>
-                <relationship kind="action" name="two:"/>
-                <relationship kind="action" name="waru:"/>
-                <relationship kind="action" name="yon:"/>
-                <relationship kind="action" name="zero:"/>
-                <relationship kind="action" name="zerozero:"/>
-                <relationship kind="outlet" name="label" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label1" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label2" candidateClass="UILabel"/>
-                <relationship kind="outlet" name="label3" candidateClass="UILabel"/>
-            </relationships>
-        </class>
-    </classes>
     <simulatedMetricsContainer key="defaultSimulatedMetrics">
         <simulatedStatusBarMetrics key="statusBar"/>
         <simulatedOrientationMetrics key="orientation"/>

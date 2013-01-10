@@ -40,6 +40,10 @@
 - (IBAction)kake:(id)sender;//×
 - (IBAction)waru:(id)sender;//÷
 - (IBAction)enter:(id)sender;//=
+- (IBAction)root:(id)sender;
+- (IBAction)sin:(id)sender;
+- (IBAction)cos:(id)sender;
+- (IBAction)tan:(id)sender;
 
 
 @end

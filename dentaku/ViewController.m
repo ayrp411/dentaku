@@ -346,5 +346,26 @@ int pm=0;//±フラグ
     }
     [[self label1] setText:[NSString stringWithFormat : @"= %g",x]];
 }
-
+////////////√を押したとき//////////////
+- (IBAction)root:(id)sender {
+    if(F>=10){
+        [[self label2] setText:[NSString stringWithFormat : @"√(%g)",x]];
+        x=sqrt(x);
+        [[self label1] setText:[NSString stringWithFormat : @"= %g",x]];
+    }
+    else{
+        [[self label2] setText:[NSString stringWithFormat : @"√(%g)",n]];
+        n=sqrt(n);
+        [[self label1] setText:[NSString stringWithFormat : @"= %g",n]];
+    }
+}
+////////////sinを押したとき//////////////
+- (IBAction)sin:(id)sender {
+}
+////////////cosを押したとき//////////////
+- (IBAction)cos:(id)sender {
+}
+////////////tanを押したとき//////////////
+- (IBAction)tan:(id)sender {
+}
 @end
