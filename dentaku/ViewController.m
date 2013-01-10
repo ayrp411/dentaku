@@ -9,9 +9,7 @@
 #import "ViewController.h"
 
 @interface ViewController ()
-
 @end
-
 @implementation ViewController
 
 - (void)viewDidLoad
@@ -37,16 +35,16 @@ int pm=0;//±フラグ
 /////////数字を入力////////
 - (void)NUMBER:(int)number {
     NSLog(@"入力");
-    if(f!=0){
-        if(F>=10){
-            n=number;
+    if(f!=0){//小数点が押されていない
+        if(F>=10){//＝が押された
+            n=number;//数値入力
             F=0;
             f=0;
             x=0;
             [[self label2] setText:@""];
         }
-        else{
-            if(pm==1){
+        else{//小数点が押されている
+            if(pm==1){//±が押されている
                 n=n-number*pow(0.1,f);
             }
             else{
@@ -57,7 +55,7 @@ int pm=0;//±フラグ
     }
     else{
         if(n==0){
-            if(pm==1){
+            if(pm==1){//±が押された
                 n=(-1)*number;
             }
             else{
@@ -65,7 +63,7 @@ int pm=0;//±フラグ
             }
         }
         else{
-            if(F>=10){
+            if(F>=10){//＝が押された
                 n=number;
                 F=0;
                 x=0;
@@ -176,19 +174,15 @@ int pm=0;//±フラグ
     if(n==0){
         [[self label1] setText:@"-"];
         pm=1;
+        NSLog(@"±_pussyu");
     }
     else{
-        if(x!=0){
+        if(F>=10){
             x=0-x;
             [[self label1] setText:[NSString stringWithFormat : @"%g",x]];
             n=x;
+            NSLog(@"±_ぷっしゅ");
         }
-        else{
-            n=0-n;
-            [[self label1] setText:[NSString stringWithFormat : @"%g",n]];
-            pm=2;
-        }
-        F=30;
     }        
 }
 /////////////clearを押したとき//////////
