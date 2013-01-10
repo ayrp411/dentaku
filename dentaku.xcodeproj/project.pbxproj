@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A51D60316421CC3006BB13A /* matu100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A51D60216421CC3006BB13A /* matu100.png */; };
 		2A745AE2162D2F5600C19FA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A745AE1162D2F5600C19FA8 /* UIKit.framework */; };
 		2A745AE4162D2F5600C19FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A745AE3162D2F5600C19FA8 /* Foundation.framework */; };
 		2A745AE6162D2F5600C19FA8 /* CoreGraphics.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A745AE5162D2F5600C19FA8 /* CoreGraphics.framework */; };
@@ -37,6 +38,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A51D60216421CC3006BB13A /* matu100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matu100.png; sourceTree = "<group>"; };
 		2A745ADD162D2F5600C19FA8 /* dentaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A745AE1162D2F5600C19FA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
 		2A745AE3162D2F5600C19FA8 /* Foundation.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = Foundation.framework; path = System/Library/Frameworks/Foundation.framework; sourceTree = SDKROOT; };
@@ -89,6 +91,7 @@
 		2A745AD2162D2F5600C19FA8 = {
 			isa = PBXGroup;
 			children = (
+				2A51D60216421CC3006BB13A /* matu100.png */,
 				2A745AE7162D2F5600C19FA8 /* dentaku */,
 				2A745B0E162D2F5600C19FA8 /* dentakuTests */,
 				2A745AE0162D2F5600C19FA8 /* Frameworks */,
@@ -240,6 +243,7 @@
 				2A745AF8162D2F5600C19FA8 /* Default-568h@2x.png in Resources */,
 				2A745AFB162D2F5600C19FA8 /* MainStoryboard_iPhone.storyboard in Resources */,
 				2A745AFE162D2F5600C19FA8 /* MainStoryboard_iPad.storyboard in Resources */,
+				2A51D60316421CC3006BB13A /* matu100.png in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -392,6 +396,7 @@
 				GCC_PREFIX_HEADER = "dentaku/dentaku-Prefix.pch";
 				INFOPLIST_FILE = "dentaku/dentaku-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Debug;
@@ -403,6 +408,7 @@
 				GCC_PREFIX_HEADER = "dentaku/dentaku-Prefix.pch";
 				INFOPLIST_FILE = "dentaku/dentaku-Info.plist";
 				PRODUCT_NAME = "$(TARGET_NAME)";
+				TARGETED_DEVICE_FAMILY = 1;
 				WRAPPER_EXTENSION = app;
 			};
 			name = Release;
@@ -460,6 +466,7 @@
 				2A745B1B162D2F5600C19FA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 		2A745B1C162D2F5600C19FA8 /* Build configuration list for PBXNativeTarget "dentakuTests" */ = {
 			isa = XCConfigurationList;
@@ -468,6 +475,7 @@
 				2A745B1E162D2F5600C19FA8 /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
 		};
 /* End XCConfigurationList section */
 	};
