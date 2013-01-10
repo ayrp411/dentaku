@@ -349,23 +349,53 @@ int pm=0;//±フラグ
 ////////////√を押したとき//////////////
 - (IBAction)root:(id)sender {
     if(F>=10){
-        [[self label2] setText:[NSString stringWithFormat : @"√(%g)",x]];
+        [[self label2] setText:[NSString stringWithFormat : @"√(%f)",x]];
         x=sqrt(x);
-        [[self label1] setText:[NSString stringWithFormat : @"= %g",x]];
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",x]];
     }
     else{
-        [[self label2] setText:[NSString stringWithFormat : @"√(%g)",n]];
+        [[self label2] setText:[NSString stringWithFormat : @"√(%f)",n]];
         n=sqrt(n);
-        [[self label1] setText:[NSString stringWithFormat : @"= %g",n]];
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",n]];
     }
 }
 ////////////sinを押したとき//////////////
 - (IBAction)sin:(id)sender {
+    if(F>=10){
+        [[self label2] setText:[NSString stringWithFormat : @"sin(%f)",x]];
+        x=sin(x*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",x]];
+    }
+    else{
+        [[self label2] setText:[NSString stringWithFormat : @"sin(%f)",n]];
+        n=sin(n*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",n]];
+    }
 }
 ////////////cosを押したとき//////////////
 - (IBAction)cos:(id)sender {
+    if(F>=10){
+        [[self label2] setText:[NSString stringWithFormat : @"cos(%f)",x]];
+        x=cos(x*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",x]];
+    }
+    else{
+        [[self label2] setText:[NSString stringWithFormat : @"cos(%f)",n]];
+        n=cos(n*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",n]];
+    }
 }
 ////////////tanを押したとき//////////////
 - (IBAction)tan:(id)sender {
+    if(F>=10){
+        [[self label2] setText:[NSString stringWithFormat : @"tan(%f)",x]];
+        x=tan(x*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",x]];
+    }
+    else{
+        [[self label2] setText:[NSString stringWithFormat : @"tan(%f)",n]];
+        n=tan(n*(2*M_PI)/360);
+        [[self label1] setText:[NSString stringWithFormat : @"= %f",n]];
+    }
 }
 @end
