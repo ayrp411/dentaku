@@ -7,6 +7,7 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		2A01847716A7B00C00FDEE13 /* statemachine.m in Sources */ = {isa = PBXBuildFile; fileRef = 2A01847616A7B00C00FDEE13 /* statemachine.m */; };
 		2A51D60316421CC3006BB13A /* matu100.png in Resources */ = {isa = PBXBuildFile; fileRef = 2A51D60216421CC3006BB13A /* matu100.png */; };
 		2A745AE2162D2F5600C19FA8 /* UIKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A745AE1162D2F5600C19FA8 /* UIKit.framework */; };
 		2A745AE4162D2F5600C19FA8 /* Foundation.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 2A745AE3162D2F5600C19FA8 /* Foundation.framework */; };
@@ -38,6 +39,8 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		2A01847516A7B00C00FDEE13 /* statemachine.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = statemachine.h; sourceTree = "<group>"; };
+		2A01847616A7B00C00FDEE13 /* statemachine.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = statemachine.m; sourceTree = "<group>"; };
 		2A51D60216421CC3006BB13A /* matu100.png */ = {isa = PBXFileReference; lastKnownFileType = image.png; path = matu100.png; sourceTree = "<group>"; };
 		2A745ADD162D2F5600C19FA8 /* dentaku.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = dentaku.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2A745AE1162D2F5600C19FA8 /* UIKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = UIKit.framework; path = System/Library/Frameworks/UIKit.framework; sourceTree = SDKROOT; };
@@ -128,6 +131,8 @@
 				2A745AFC162D2F5600C19FA8 /* MainStoryboard_iPad.storyboard */,
 				2A745AFF162D2F5600C19FA8 /* ViewController.h */,
 				2A745B00162D2F5600C19FA8 /* ViewController.m */,
+				2A01847516A7B00C00FDEE13 /* statemachine.h */,
+				2A01847616A7B00C00FDEE13 /* statemachine.m */,
 				2A745AE8162D2F5600C19FA8 /* Supporting Files */,
 			);
 			path = dentaku;
@@ -281,6 +286,7 @@
 				2A745AEE162D2F5600C19FA8 /* main.m in Sources */,
 				2A745AF2162D2F5600C19FA8 /* AppDelegate.m in Sources */,
 				2A745B01162D2F5600C19FA8 /* ViewController.m in Sources */,
+				2A01847716A7B00C00FDEE13 /* statemachine.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
